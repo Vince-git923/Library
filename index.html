@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="form-cont">
+        <form class="popUpForm" >
+            <div class="formx-cont">
+                <div class="formX">X</div>
+            </div>
+            <label for="title" class="title-label">Title:</label>
+            <input type="text" class="title" name="title"required maxlength = "150" >
+            <label for="author">Author:</label>
+            <input type="text" class="author" name="author" required>
+            <label for="page">Number of Pages:</label>
+            <input type="number"  class="page-num" name="page" required>
+            <span class="check-cont">Have you read the book? <input type="checkbox" class ="checkbox" name="read"></span> 
+            <button type="submit" class="submit-btn">Submit</button>
+      
+        </form>
+    </div>
+    <div class="mainCont">
+
+        <div class="header">
+            
+            <h1>Simple Library</h1>
+            <button class="addBtn">+</button>
+            
+            
+        </div>
+        <div class="bookDisp">
+            <div class="booksCont">
+            </div>
+        </div>
+    </div>
+            
+        
+</body>
+<script src="index.js"></script>
+</html>

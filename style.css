@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    
+}
+.mainCont{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(90deg, rgba(19, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1602722053020-af31042989d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+   max-width: 2000px;
+    
+    
+    
+}
+
+.addBtn{
+    font-size: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(102, 20, 154);
+    color: rgb(230, 229, 227);
+    
+}
+.i-des{
+    font-style: italic;
+}
+.header{
+    align-items: center;
+    display: flex;
+    padding: 60px 150px;
+    justify-content: space-between;
+    max-width: 2000px;
+    background-color: rgba(0, 0, 0,0.6);
+    
+}
+
+.bookDisp{
+   
+    display: flex;
+    padding: 40px 60px 40px 60px;
+   
+    
+}
+
+.bookCont{
+    background: linear-gradient(20deg,  rgb(8, 70, 63)20%, rgb(24, 98, 39));
+    
+    font-weight: 300;
+    color:white;
+    max-width: 500px;
+    min-height: 250px;
+    padding: 10px 20px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    border-radius: 10px;
+    
+}
+
+.x-cont{
+    
+   align-items: center;
+   justify-content: flex-end;
+   
+    display: flex;
+}
+.x-btn{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.booksCont{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+   
+
+}
+.slideCont{
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    width:40px;
+    height: 20px;
+    border: 2px solid orange;
+    border-radius: 20px;
+}
+
+.slider{
+    background-color: rgb(4, 255, 0);
+    transition: 0.4s;
+    transform: translateX(20px);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+   
+}
+
+.anim{
+    background-color: rgb(181, 15, 15);
+    transform: translateX(0px);
+    transition:0.4s;
+}
+.text-empty{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-cont{
+    z-index: 2;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+.popUpForm{
+    font-size: 18px;
+    color: white;
+    padding: 50px 100px 100px 100px;
+    min-width: 300px;
+    border-radius: 20px;
+    background-color: rgb(72, 12, 40);
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+}
+.submit-btn{
+    max-width: 100px;
+    padding: 15px 20px;
+    background-color: rgb(57, 57, 185);
+    border: none;
+    color:whitesmoke;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.check-cont{
+    display: flex;
+    gap:30px;
+}
+.checkbox{
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #34495E;
+    border-radius: 4px;
+    outline: none;
+    
+    background-color: #fafbfb;
+    cursor: pointer;
+}
+
+.checkbox:checked{
+    background-color: #e0e0e0;
+    
+}
+.checkbox:checked::before{
+    content: '✓';
+    display: block;
+    color: #5741b8;
+    position: relative;
+   top:-20px;
+   left: -5px;
+    font-size: 50px;
+
+}
+form > input{
+   padding: 5px;
+   outline: none;
+}
+
+
+.des{
+    background: rgba(0,0,0,0.9);
+    color:rgb(134, 133, 131)
+}
+.formx-cont{
+    display: flex;
+    justify-content: flex-end;
+}
+.formX{
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+}
+@media(hover:hover){
+    .x-btn:hover{
+        background-color: red;
+    }
+    .addBtn:hover{
+        background-color: white;
+        color: black;
+    }.submit-btn:hover{
+        background-color: white;
+        color:blue;
+    }
+    .formX:hover{
+        background-color: red;
+    }
+   
+}
+@media(max-width:1000px){
+    .bookCont{
+        padding:10px 20px 25px 20px;
+    }
+    .booksCont{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:600px){
+    .header{
+        padding: 30px;
+    }
+    .booksCont{
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+    .bookDisp{
+        padding: 10px;
+    }
+    
+    .mainCont{
+        width: 100%;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .popUpForm{
+        font-size: 18px;
+        color: white;
+        padding:20px;
+        border-radius: 20px;
+        background-color: rgb(72, 12, 40);
+        gap:20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+    }
+    .form-cont{
+        z-index: 2;
+        visibility: hidden;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        
+    }
+}@media(max-width:340px){
+    h1{
+        font-size: 25px;
+    }
+    
+    .formx-cont{
+        width: 80vw;
+        
+    }
+    .popUpForm > input, .popUpForm > label{
+       max-width: 90%;
+    }
+    .form-cont{
+        display:block;
+       
+        width: 100vw;
+    }
+    .popUpForm{
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        width: 20px;
+       border-radius: 0;
+    }
+    .check-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+@keyframes formAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.formanim {
+    animation-name: formAnim;
+    animation-duration: 1s;
+}
